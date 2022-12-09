@@ -1,42 +1,29 @@
 #include <stdio.h>
+
 /**
- * main - program that prints all possible different combinations
- * of thress digits
- *
- * Return: 0
+ * main - prints all possible different combinations of three digits
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int i;
+	int n, m, l;
 
-	int n;
-
-	int j;
-
-	for (i = 48; i < 58; i++)
+	for (n = 48; n < 58; n++)
 	{
-		for (n = 48; n < 58; n++)
+		for (m = 49; m < 58; m++)
 		{
-			for (n = 48; n < 58; n++)
+			for (l = 50; l < 58; l++)
 			{
-				if (n > i)
+				if (l > m && m > n)
 				{
-					for (j = 48; j < 58; j++)
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
 					{
-						if (j > n)
-						{
-						putchar(i);
-						putchar(n);
-						putchar(j);
-
-						if (i == 55 && n == 56 && j == 57)
-						{
-							break;
-						}
 						putchar(',');
 						putchar(' ');
-						}
 					}
 				}
 			}
