@@ -1,17 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - prints alpha in lower case
- * Return: Always 0
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	char lc;
+	char c;
 
-	for (lc = 'a'; lc <= 'z'; lc++)
-	{
-		putchar(lc);
-	}
-	putchar("\n");
+	c = 'a';
+	while 
+		(c <= 'z') {
+			putchar(c);
+			c++;
+		}
+	putchar('\n');
 	return (0);
 }
