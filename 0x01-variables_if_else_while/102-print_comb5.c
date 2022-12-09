@@ -3,9 +3,8 @@
 #include <time.h>
 
 /**
- * main - prints all possible combination of two two-digit numbers.
- * Return: 0
- *
+ * main - print all possible combination of two two difit numbers
+ * Return: Always 0
  */
 
 int main(void)
@@ -21,12 +20,11 @@ int main(void)
 			putchar(' ');
 			putchar((b / 10) + '0');
 			putchar((b % 10) + '0');
+
 			if (a == 98 && b == 99)
 				continue;
-
-			putchar('.');
+			putchar(',');
 			putchar(' ');
-
 		}
 	}
 	putchar('\n');
