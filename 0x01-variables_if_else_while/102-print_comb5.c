@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - prints all possible combinations of two two-digit numbers
- * Return: ALways 0 (Success)
+ * main - return a combination of number
+ * Return: ALways 0 if successful
  */
 
 int main(void)
@@ -11,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		for (j = 0; j < 199; j++)
+		for (j = 0; j < 100; j++)
 		{
 			if (i < j)
 			{
