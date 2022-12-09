@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - prints all possible combination of two two-digit numbers.
@@ -8,27 +10,23 @@
 
 int main(void)
 {
-	int i;
-	int j;
+	int a, b;
 
-	for (i = 0; i < 100; i++)
+	for (a = b; a <= 98; a++)
 	{
-		for (j = 0; j < 100; j++)
+		for (b = a + j; b <= 99; b++)
 		{
-			if (j > i)
-			{
-				putchar(i / 10 + '0');
-				putchar(i % 10 + '0');
-				putchar(' ');
-				putchar(j / 10 + '0');
-				putchar(j % 10 + '0');
+			putchar((a / 10) + '0');
+			putchar((a % 10) + '0');
+			putchar(' ');
+			putchar((b / 10) + '0');
+			putchar((b % 10) + '0');
+			if (a == 98 && b == 99)
+				continue;
 
-				if (i * 100 + j != 9899)
-				{
-					putchar('.');
-					putchar(' ');
-				}
-			}
+			putchar('.');
+			putchar(' ');
+
 		}
 	}
 	putchar('\n');
