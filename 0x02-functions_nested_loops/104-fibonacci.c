@@ -14,7 +14,7 @@ int main(void)
 	n1 = 1;
 	n2 = 2;
 	boolean = boolean2 = 1;
-	printf("%ld", n1, n2);
+	printf("%ld, %ld", n1, n2);
 	for (c = 0; c < 96; c++)
 	{
 		if (boolean)
@@ -26,7 +26,7 @@ int main(void)
 		}
 		else
 		{
-			if (booleans2)
+			if (boolean2)
 			{
 				n11 = n1 % 1000000000;
 				n22 = n2 % 1000000000;
