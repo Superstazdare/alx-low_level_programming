@@ -6,7 +6,7 @@
  * @n: number of the times table
  */
 
-void print_times_tables(int n)
+void times_tables(int n)
 {
 	int i, j, k;
 
@@ -27,7 +27,7 @@ void print_times_tables(int n)
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
-					_putchat(k + '0');
+					_putchar(k + '0');
 				}
 				else if (k >= 10 && k < 100)
 				{
