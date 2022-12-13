@@ -6,7 +6,7 @@
  * @n: number of the times table
  */
 
-void times_tables(int n)
+void times_table(int n)
 {
 	int i, j, k;
 
