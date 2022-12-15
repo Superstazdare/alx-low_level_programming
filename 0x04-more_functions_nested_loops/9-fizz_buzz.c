@@ -19,15 +19,15 @@ int main(void)
 	{
 		if (i == 100)
 			printf("%s", b);
-		else if ((i % 3 == 0) && (in% 5 == 0))
+		else if ((i % 3 == 0) && (i % 5 == 0))
 			printf("%s", fb);
 		else if (i % 3 == 0)
 			printf("%s", f);
 		else if (i % 5 == 0)
 			printf("%s", b);
-		else 
+		else
 			printf("%d", i);
 	}
 	printf("\n");
-	retyrn (0);
+	return (0);
 }

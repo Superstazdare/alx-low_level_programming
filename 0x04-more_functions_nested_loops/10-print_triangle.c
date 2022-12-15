@@ -3,8 +3,9 @@
 /**
  * print_traingle - function that prints a triangle
  * @size: size of the triangle
- * Return: traingle '#'s
+ * Return: traingle of '#'s
  */
+
 void print_triangle(int size)
 {
 	int sp, ro, tr;
@@ -13,7 +14,7 @@ void print_triangle(int size)
 	{
 		_putchar('\n');
 	}
-	else 
+	else
 	{
 		for (ro = 0; ro <= (size - 1); ro++)
 		{
