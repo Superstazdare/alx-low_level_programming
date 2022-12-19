@@ -3,7 +3,7 @@
 /**
  * _atoi - converts a string to an integer.
  * @s: input string.
- * Return: integer.
+ * Return: the int converted from the string
  */
 
 int _atoi(char *s)
@@ -18,6 +18,7 @@ int _atoi(char *s)
 
 	while (s[len] != '\0')
 		len++;
+
 	while (i < len && f == 0)
 	{
 		if (s[i] == '-')
@@ -37,5 +38,6 @@ int _atoi(char *s)
 	}
 	if (f == 0)
 		return (0);
+
 	return (n);
 }
