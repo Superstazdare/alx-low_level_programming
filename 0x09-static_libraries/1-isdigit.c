@@ -1,24 +1,21 @@
 #include "main.h"
 
 /**
- * _strcat - This is the main copy
- * @dest: This is my dest
- * @src: This is my source
+ * _isdigit - If is 0 to 9 return 1, if not return 0
  *
- * Return: This return to the result
- */
-
-char *_strcat(char *dest, char *src)
+ * @c: this is the entry
+ *
+ * Return: 0
+ *
+ **/
+int _isdigit(int c)
 {
-	int a, b;
-
-	for (a = 0; dest[a] != '\0'; a++)
+	if (c >= '0' && c <= '9')
 	{
+		return (1);
 	}
-	for (b = 0; src[b] != '\0'; b++)
+	else
 	{
-	dest[a] = src[b];
-	a++;
+		return (0);
 	}
-	return (dest);
 }
