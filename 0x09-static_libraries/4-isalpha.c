@@ -1,20 +1,25 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
- *_isalpha - check the the entry to deteminate if is lower or upper
- *
- * @c: This is the entry
- * Return: Always 0.
+ * _strpbrk - This is my function
+ * @s: This is my entry
+ * @accept: This is my second entry
+ * Return: This is my return
  */
-
-int _isalpha(int c)
+char *_strpbrk(char *s, char *accept)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	unsigned int a, b;
+
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		return (1);
+		for (b = 0; accept[b] != '\0'; b++)
+		{
+			if (accept[b] == s[a])
+			{
+				return (&s[a]);
+			}
+		}
 	}
-	else
-	{
-		return (0);
-	}
+	return (NULL);
 }
