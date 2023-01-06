@@ -3,7 +3,7 @@
 /**
  * char *_strcpy - a function that copies the sting pointed to by src
  * @dest: copy to
- * @src: copt from
+ * @src: copy from
  * Return: string
  */
 char *_strcpy(char *dest, char *src)
