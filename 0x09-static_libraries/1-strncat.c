@@ -1,31 +1,27 @@
 #include "main.h"
 
 /**
- * _strncat - concentrate two strings
- * using at most n bytes from src
- * @dest: input value
- * @src: input value
- * @n: input value
- *
- * Return: dest
+ * _strncat - THis is the main
+ * @dest: This is the dest
+ * @src: This is the src
+ * @n: Thi is n
+ * Return: This is my return
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int j;
+	int a, b;
 
-	i = 0;
-	while (dest[i] != '\0')
+	for (a = 0; dest[a] != '\0'; a++)
 	{
-		i++;
 	}
-	j = 0;
-	while (j < n && src[j] != '\0')
+	for (b = 0; b < n && src[b] != '\0'; b++)
 	{
-		dest[i] = src[j];
-		i++;
-		j++;
+		dest[a] = src[b];
+		a++;
 	}
-	dest[i] = '\0';
+	if (b < n)
+	{
+	dest[a] = '\0';
+	}
 	return (dest);
 }
