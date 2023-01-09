@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
  * *argstostr - prints args
@@ -18,9 +19,8 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	while (a < ac)
+	while (av < ac)
 	{
-		b = 0;
 		while (av[a][b] != '\0')
 		{
 			count++;
@@ -41,7 +41,7 @@ char *argstostr(int ac, char **av)
 			str[c] = av[a][b];
 			c++;
 		}
-		str[c] = '\n';
+		str[ac] = '\n';
 		c++;
 	}
 	return (str);
