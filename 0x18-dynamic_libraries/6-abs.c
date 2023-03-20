@@ -5,7 +5,6 @@
  * @t: The integer to be computed
  * Return: The absolute value
  */
-
 int _abs(int t)
 {
 	if (t >= 0)

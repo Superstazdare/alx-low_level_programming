@@ -1,13 +1,11 @@
 #include "main.h"
-
 /**
- * _strncat - joins two strings with n bytes
- * @dest: copy to
- * @src: copy from
- * @n: number of char to be copied
- * Return: dest
+ * _strncat - concatenates two strings,
+ * @dest: destination.
+ * @src: source.
+ * @n: amount of bytes used from src.
+ * Return: the pointer to dest.
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int i;
@@ -18,13 +16,15 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
+
 	j = 0;
 	while (j < n && src[j] != '\0')
 	{
-		dest[i]  = src[j];
+		dest[i] = src[j];
 		i++;
 		j++;
 	}
 	dest[i] = '\0';
+
 	return (dest);
 }
